@@ -11,7 +11,7 @@ export const startLogin = (email, password) =>{
         try {
             
             
-        const res = await axios.post('https://challenge-react.alkemy.org/', {email, password})
+        const res = await axios.post('http://challenge-react.alkemy.org/', {email, password})
         const {token} = res.data;
 
             
