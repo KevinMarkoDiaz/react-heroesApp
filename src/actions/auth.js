@@ -11,7 +11,7 @@ export const startLogin = (email, password) =>{
         try {
             
             
-        const res = await axios.post('http://challenge-react.alkemy.org/', {email, password})
+        const res = await axios.post('https://challenge-react.alkemy.org/', {email, password})
         const {token} = res.data;
 
             
@@ -23,9 +23,8 @@ export const startLogin = (email, password) =>{
 
            console.log(error)
             
-            const msgError = error.response.data.error
 
-            Swal.fire(`${msgError}`, 'Access is denied ', 'error')
+            Swal.fire(`Opss...`, 'Access is denied ', 'error')
         }
 
     }
