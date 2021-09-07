@@ -1,0 +1,72 @@
+
+.contenedorSearch{
+
+    padding: 5vw;
+
+}
+
+.searchImput{
+    border: 1px solid rgb(146, 146, 146);
+    box-shadow: 2px 2px 5px $base-grey;
+    display:  flex;
+    justify-content: center;
+    width: 70%;
+
+        .searchImput__search{
+            width: 100%;
+            border: none;
+            height: 4vh;
+            font-family: $base-font;
+            font-size: 24px;
+            outline: none;
+
+        }
+        .searchImput__button{
+            border: none;
+            background-color: $base-grey;
+            font-size: 30px;
+            width: 15%;
+            color: #fff;
+            
+            
+
+        }
+}
+
+.cardHover{
+    
+
+    img {
+       
+        height : 22rem;
+
+    }
+
+    .cardHover__hover{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height:77.9%;
+        background: rgba(255, 255, 255, 0.8);
+        transition: all 300ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+    }
+}
+
+.cardHover:hover > .cardHover__hover{
+
+    opacity: 1 ;
+    visibility: visible;
+}
+
+.cardHover:hover > img{
+
+    overflow:hidden;
+    
+}
+
+.listStyleNone{
+    list-style: none;
+}
