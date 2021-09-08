@@ -46,7 +46,7 @@ export const searchDetailsId = (id)=>{
 
         const config = {
 
-            url: `https://superheroapi.com/api/10226000777461921/${id}`,
+            url: `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10226000777461921/${id}`,
             method: 'GET',
             mode: 'cors',
             headers: {
