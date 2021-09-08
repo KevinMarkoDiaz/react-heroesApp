@@ -43,7 +43,21 @@ export const searchDetailsId = (id)=>{
     return async (dispatch)=>{
 
         try{
-        const res = await axios.get(`https://superheroapi.com/api/10226000777461921/${id}`);
+
+        const config = {
+
+            url: `https://superheroapi.com/api/10226000777461921/${id}`,
+            method: 'GET',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'origin':'x-requested-with',
+                'Access-Control-Allow-Headers': 'POST, GET, PUT, DELETE, OPTIONS, HEAD, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Allow-Origin',
+                'Content-Type': 'application/json',
+            }
+
+        }
+
+        const res = await axios(config);
         const dataDetail = res.data;
         
         dispatch(setDataDetails(dataDetail));
