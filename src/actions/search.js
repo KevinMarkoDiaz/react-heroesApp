@@ -48,6 +48,7 @@ export const searchDetailsId = (id)=>{
 
             url: `https://superheroapi.com/api/10226000777461921/${id}`,
             method: 'GET',
+            mode: 'cors',
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'origin':'x-requested-with',
