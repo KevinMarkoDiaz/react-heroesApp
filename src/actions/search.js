@@ -46,9 +46,9 @@ export const searchDetailsId = (id)=>{
 
         const config = {
 
-            url: `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10226000777461921/${id}`,
             method: 'GET',
-            mode: 'cors',
+            url: `https://github.com/Rob--W/cors-anywhere/https://superheroapi.com/api/10226000777461921/${id}`,
+            mode: 'no-cors',           
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'origin':'x-requested-with',
